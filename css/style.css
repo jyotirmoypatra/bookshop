@@ -472,7 +472,7 @@ hr {
         font-size: 10px;
     }
     #stand{
-        width: 100%
+        display: none;
     }
 }
 
@@ -518,7 +518,16 @@ hr {
         height: 230px;
     }
     #stand{
-        width: 205px;
+        display: none;
+    }
+    .home .row .column .content .discount {
+        font-size: 10px;
+    }
+    .home .row .column .content h1 {
+        font-size: 20px;
+    }
+    .home .row .column .content h3 {
+        font-size: 13px;
     }
 }
 
