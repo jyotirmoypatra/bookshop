@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header .header-1{
+.header .header-1 {
     background: rgb(238, 252, 230);
     padding: 1.5rem;
     display: flex;
@@ -21,224 +20,235 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-   
 }
 
-.header .header-1 .logo{
+.header .header-1 .icons a, #login-btn {
+    transition: transform .2s;
+}
+
+.header .header-1 .icons a:hover, #login-btn:hover {
+    color: #3414ee;
+    transform: scale(1.1);
+}
+
+.header .header-1 .logo {
     font-size: 1.8rem;
     font-weight: bold;
     color: black;
     margin-left: 2rem;
 }
 
-.header .header-1 .logo i{
-    color:green;
+.header .header-1 .logo i {
+    color: rgb(52, 18, 246);
+    padding-right: 3px;
 }
 
-.header .header-1 .search-form{
-  width: 35rem;
-  height: 2.5rem;
-  overflow: hidden;
-  display: flex;
-  margin-left: 2rem;
-  align-items: center;
-  border:1px solid gray;
-  border-radius: .6rem;
-  padding:.5rem ;
+.header .header-1 .search-form {
+    width: 35rem;
+    height: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: .6rem;
+    padding: .5rem;
 }
 
-.header .header-1 .search-form input{
+.header .header-1 .search-form input {
     font-size: 1.1rem;
-    padding:0 1rem ;
+    padding: 0 1rem;
     height: 100%;
-    background:none;
+    background: none;
     width: 100%;
     text-transform: none;
-    color: green;
+    color: rgb(12, 8, 250);
 }
-.header .header-1 .search-form label{
+
+.header .header-1 .search-form label {
     font-size: 1.5rem;
     padding-right: 1.5rem;
+    transition: transform .2s
 }
-.header .header-1 .search-form label:hover{
-    color: green;
+
+.header .header-1 .search-form label:hover {
+    color: rgb(75, 1, 246);
+    transform: scale(1.1);
 }
-.header .header-1 .icons{
+
+.header .header-1 .icons {
     margin-right: 2.5rem;
 }
 
-.header .header-1 .icons div,
-.header .header-1 .icons a{
+.header .header-1 .icons div, .header .header-1 .icons a {
     font-size: 1.5rem;
     margin-left: 2rem;
     color: black;
 }
 
-.header .header-2{
-    background: green;
+.header .header-2 {
+    background: #3414ee;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-   margin-top: 75px;
-   
+    margin-top: 75px;
 }
 
-.header .header-2 .navbar{
+.header .header-2 .navbar {
     text-align: center;
-    box-shadow:0 .5rem 1rem gray;
-   
+    box-shadow: 0 .5rem 1rem gray;
 }
-.header .header-2 .navbar a{
+
+.header .header-2 .navbar a {
     color: white;
     display: inline-block;
-
+    font-weight: bolder;
     font-size: 1.2rem;
     padding: .7rem;
     margin-left: 25px;
 }
 
-.header .header-2 .navbar a:hover{
+.header .header-2 .navbar a:hover {
     background: rgb(100, 100, 100);
 }
-.header .header-2.active{
+
+.header .header-2.active {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
-
 }
 
-
-
-
-.bottom-navbar{
+.bottom-navbar {
     text-align: center;
-    background: green;
-    
+    background: rgb(19, 3, 253);
     z-index: 1;
 }
 
-.bottom-navbar a{
+.bottom-navbar a {
     font-size: 1.7rem;
     padding: 15px;
     color: #fff;
     margin-left: 26px;
 }
 
-.bottom-navbar a:hover{
+.bottom-navbar a:hover {
     background: gray;
 }
 
-.upper-section{
-    background:url(../img/bg1.jpg);
+.upper-section {
+    background: url(../img/bg1.jpg);
     background-size: cover;
     height: auto;
-        
-}
-.home .row{
-    display:flex;      
 }
 
+.home .row {
+    display: flex;
+}
 
-
-.home .row .column{
-    flex:1 1 42rem;
+.home .row .column {
+    flex: 1 1 42rem;
     margin-top: 16rem;
-   
 }
-.home .row .column .content{
+
+.home .row .column .content {
     margin-top: 30px;
     margin-left: 70px;
 }
-.home .row .column .content h1{
+
+.home .row .column .content h1 {
     font-size: 40px;
 }
-.home .row .column .content p{
+
+.home .row .column .content p {
     margin-top: 15px;
     font-size: 19px;
     margin-bottom: 20px;
 }
-.home .row .column .content a{
+
+.home .row .column .content a {
     margin-top: 15px;
     font-size: 19px;
-    background: green;
+    background: rgb(9, 41, 226);
     padding: 5px;
     border-radius: 7px;
     color: white;
-    
 }
 
-
-.home .row .column .content a:hover{
-        background:rgb(4, 59, 4);
+.home .row .column .content a:hover {
+    background: rgb(19, 187, 19);
+    color: black;
+    font-weight: bold;
 }
-#stand{
+
+#stand {
     width: 650px;
     margin-top: -29px;
-    
 }
-.home .row .column .book img{
+
+.home .row .column .book img {
     height: 260px;
     width: 200px;
     margin-left: 10px;
-
     transition: transform .2s
 }
-.home .row .column .book img:hover{
+
+.home .row .column .book img:hover {
     transform: scale(1.1)
 }
 
-.features{
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.features {
     margin-top: 50px;
     margin-bottom: 40px;
 }
 
- .features .row {
+.features .row {
     text-align: center;
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
-} 
- .features .row .column{
-    flex:1;
-    
-}
- .features .row .column a{
-    font-size: 25px;
-  font-weight: bold;
-  color: black;
-    
 }
 
- .features .row .column a i{
+.features .row .column {
+    flex: 1;
+}
+
+.features .row .column a {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.features .row .column a i {
     font-size: 28px;
     margin-right: 8px;
-    color: green;
-    
+    color: rgb(57, 158, 17);
 }
 
-.section-type{
+.section-type {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
-    
 }
 
-.section-type a{
+.section-type a {
     font-size: 29px;
-    color: black;
+    color: white;
     font-weight: bold;
-    background: rgb(179, 250, 121);
+    background: rgba(62, 33, 226, 0.959);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
 }
-
-
 
 hr {
     display: block;
@@ -251,62 +261,56 @@ hr {
     padding: 0;
 }
 
-
-.book{
+.book {
     margin-bottom: 10px;
 }
-.book .row{
+
+.book .row {
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 25px;
     grid-gap: 50px;
     text-align: center;
-    
-    
-    
 }
 
-.book .row .column{
+.book .row .column {
     text-align: center;
     background-color: rgba(255, 166, 166, 0.294);
-    padding-bottom:20px ;
-  padding-top: 15px;
-  border-radius: 15px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-radius: 15px;
 }
-.book .row .column img{
+
+.book .row .column img {
     width: 250px;
     height: 320px;
     transition: transform .2s;
 }
 
-.book .row .column img:hover{
+.book .row .column img:hover {
     transform: scale(1.05);
-    }
+}
 
-.book .row .column a{
+.book .row .column a {
     background: orange;
-     font-size: 20px;
-     font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
     border-radius: 7px;
     color: black;
-   
-       
 }
 
-.book .row .column a:hover{
+.book .row .column a:hover {
     background: rgb(5, 145, 5);
 }
 
-
-.book .row .column p{
+.book .row .column p {
     margin-bottom: 15px;
     font-size: 17px;
     font-weight: bold;
-
 }
 
 .book .review {
@@ -317,110 +321,109 @@ hr {
     text-align: center;
 }
 
-.book .review .column img{
+.book .review .column img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 1px solid rgb(22, 228, 22);
 }
 
-.book .review .column .checked{
+.book .review .column .checked {
     color: orange;
 }
 
-.section-type p{
+.section-type p {
     margin-top: 20px;
     margin-bottom: -40px;
 }
 
-.section-type #contact-info{
-    color:green;
+.section-type #contact-info {
+    color: green;
     font-weight: bold;
-    
 }
-.contact{
+
+.contact {
     display: flex;
-    text-align: center;  
-    justify-content: center;  
+    text-align: center;
+    justify-content: center;
     background: url(../img/1.jpg);
-    box-shadow:inset 0 0 0 2000px rgba(21, 104, 25, 0.3);
-   background-size: cover;
-   background-repeat: no-repeat;
-   padding: 20px;
-   padding-top: 90px;
-   padding-bottom: 70px;
+    box-shadow: inset 0 0 0 2000px rgba(21, 104, 25, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
 
-
-   }
-
-.contact .address{
+.contact .address {
     margin-right: 90px;
 }
 
-.contact .address .rw{
+.contact .address .rw {
     display: flex;
     text-align: left;
     padding: 10px;
     margin-top: 8px;
 }
-.contact .address .rw .col i{
-font-size:30px;
-padding: 15px;
-color: yellow;
 
+.contact .address .rw .col i {
+    font-size: 30px;
+    padding: 15px;
+    color: white;
 }
 
-
-.contact .address .rw .col h3{
-    color: rgb(209, 255, 4);
-    font-weight: bolder;
-    text-shadow: 2px 2px black;
+.contact .address .rw .col h3 {
+    color: rgba(13, 75, 245, 0.945);
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    
 }
-.contact .address .rw .col p{
-    color:white;
+
+.contact .address .rw .col p {
+    color: white;
     font-size: 15px;
     text-shadow: 1px 1px black;
 }
-.contact .address .rw .col .eml{
+
+.contact .address .rw .col .eml {
     text-transform: lowercase;
 }
 
 .contact .contact-form {
     background: white;
     padding: 10px;
-    width:30% ;
+    width: 30%;
     margin-left: 150px;
-   border-radius: 20px;
+    border-radius: 20px;
     padding-top: 20px;
-    
-}
-.contact .contact-form label{
-    font-size: 18px;
-    font-weight: bolder;
-    
-   
-    
 }
 
-.contact .contact-form .input{
-    margin-top: 5px;
-width: 90%;
-padding: 10px;
-font-size: 17px;
-background: none;
-border-bottom: 1px solid black;
-color: black;
+.contact .contact-form label {
+    font-size: 18px;
+    font-weight: bolder;
 }
-.contact .contact-form #submit{
+
+.contact .contact-form .input {
+    margin-top: 5px;
+    width: 90%;
+    padding: 10px;
+    font-size: 17px;
+    background: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.contact .contact-form #submit {
     padding: 8px;
     border-radius: 5px;
     margin-top: 25px;
     margin-bottom: 10px;
     color: white;
     font-size: 17px;
-    background: rgb(11, 145, 168);
+    background: #3414ee;
+    text-transform: uppercase;
 }
 
-.contact .contact-form #submit:hover{
-background: green;
+.contact .contact-form #submit:hover {
+    background: green;
 }

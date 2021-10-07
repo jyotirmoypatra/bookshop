@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,11 +59,14 @@
                 </div>
             </div>
 
-            <div class="column">
-                <div class="book">
-                    <a href="#"><img src="img/book-1.png" alt=""></a>
-                    <a href="#"><img src="img/book-2.png" alt=""></a>
-                    <a href="#"><img src="img/book-3.png" alt=""></a>
+            <div class="column swiper book-slider">
+                <div class="book swiper-wrapper">
+                    <a href="#"class="swiper-slide"><img src="img/book-1.png" alt=""></a>
+                    <a href="#"class="swiper-slide"><img src="img/book-2.png" alt=""></a>
+                    <a href="#"class="swiper-slide"><img src="img/book-3.png" alt=""></a>
+                    <a href="#"class="swiper-slide"><img src="img/book-8.png" alt=""></a>
+                    <a href="#"class="swiper-slide"><img src="img/book-9.png" alt=""></a>
+                    <a href="#"class="swiper-slide"><img src="img/book-5.png" alt=""></a>
 
                 </div>
                 <a href="#"><img id="stand" src="img/stand.png" alt=""></a>
@@ -93,7 +100,7 @@
 
         <!-----features book start----->
         <div class="section-type">
-            <a href="">features book</a>
+            <a href="" id="featured">features book</a>
             <hr>
         </div>
 
@@ -139,7 +146,7 @@
         <!-----new arival book start----->
 
         <div class="section-type">
-            <a href="">New Arivals</a>
+            <a href="" id="arrivals">New Arivals</a>
             <hr>
         </div>
         <div class="row">
@@ -215,8 +222,8 @@
 
         <!-----customer review start----->
 
-        <div class="section-type">
-            <a href="">Customer review</a>
+        <div class="section-type" id="review">
+            <a href="" >Customer review</a>
             <hr>
         </div>
 
@@ -306,8 +313,8 @@
 
 
             </div>
-            <div class="contact-form">
-                <form action="">
+            <div class="contact-form" id="#contact">
+                <form action="" >
                     <label for="">Send us a message</label>
                     <input type="text" name="" class="input" placeholder="Full Name"> <br>
                     <input type="text" name="" class="input" placeholder="Email "><br>
@@ -331,10 +338,10 @@
     <div class="bottom-navbar">
         <nav class="navbar">
             <a href="#home" class="fas fa-home"></a>
-            <a href="#facebook" class="fab fa-facebook"></a>
-            <a href="#instagram" class="fab fa-instagram"></a>
-            <a href="#twitter" class="fab fa-twitter"></a>
-            <a href="#kinedin" class="fab fa-linkedin"></a>
+            <a href="https://www.facebook.com/profile.php?id=100004950225326" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/jyotirmoy_patra/" class="fab fa-instagram"></a>
+            <a href="https://twitter.com/patra_jyotirmoy" class="fab fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/jyotirmoypatra-1998j/" class="fab fa-linkedin"></a>
         </nav>
     </div>
 
@@ -342,7 +349,8 @@
 
     <!---bottom navbar end------->
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
