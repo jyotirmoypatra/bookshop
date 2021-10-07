@@ -477,6 +477,13 @@ hr {
 }
 
 @media (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    .header .header-1{
+        height: 50px;
+    }
+
     .header .header-2 {
         display: none;
     }
@@ -502,7 +509,7 @@ hr {
         font-size: 15px;
     }
     .home .row .column .content {
-        margin-top: -90px;
+        margin-top: -70px;
         margin-left: 20px;
     }
     .home .row .column .content .terms {
