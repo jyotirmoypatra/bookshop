@@ -581,12 +581,16 @@ hr {
     .book .review{
         display: table;
     }
+    .book .review .column{
+        margin-left: 15px;
+        
+    }
     .contact{
         display: table;
         width: 100%;
     }
     .contact .address{
-        margin-left: 65px;
+        margin-left: 60px;
         margin-right: auto;
         margin-bottom: 20px;
     }
