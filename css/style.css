@@ -80,6 +80,10 @@
     margin-right: 2.5rem;
 }
 
+#search-btn {
+    display: none;
+}
+
 .header .header-1 .icons div, .header .header-1 .icons a {
     font-size: 1.5rem;
     margin-left: 2rem;
@@ -450,4 +454,76 @@ hr {
 
 .contact .contact-form #submit:hover {
     background: green;
+}
+
+/* media queries */
+
+@media (max-width:991px) {
+    html {
+        font-size: 13px;
+    }
+    .home .row .column .content h1 {
+        font-size: 30px;
+    }
+    .home .row .column .content h3 {
+        font-size: 19px;
+    }
+    .home .row .column .content .discount {
+        font-size: 10px;
+    }
+    #stand{
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .header .header-2 {
+        display: none;
+    }
+    #search-btn {
+        display: inline-block;
+    }
+    .header .header-1 {
+        box-shadow: 0 .5rem 1rem gray;
+        position: relative;
+    }
+    .header .header-1 .search-form {
+        position: absolute;
+        top: -120%;
+        right: 2rem;
+        width: 90%;
+        background: rgb(236, 245, 247);
+        box-shadow: 0 .5rem 1rem gray;
+    }
+    .header .header-1 .search-form.active {
+        top: 120%;
+    }
+    .home .row .column .content a {
+        font-size: 15px;
+    }
+    .home .row .column .content {
+        margin-top: -90px;
+        margin-left: 20px;
+    }
+    .home .row .column .content .terms {
+        font-size: 10px;
+        margin-left: -1px;
+        margin-top: 10px;
+    }
+    .home .row .book-slider{
+        margin-top: 80px;
+    }
+    .home .row .column .book img {
+        width: 190px;
+        height: 230px;
+    }
+    #stand{
+        width: 205px;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 45%;
+    }
 }
