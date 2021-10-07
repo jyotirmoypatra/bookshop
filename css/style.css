@@ -127,6 +127,13 @@
     z-index: 1;
 }
 
+.bottom-navbar .copywrite {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
 .bottom-navbar a {
     font-size: 1.7rem;
     padding: 15px;
@@ -162,10 +169,22 @@
     font-size: 40px;
 }
 
-.home .row .column .content p {
-    margin-top: 15px;
-    font-size: 19px;
+.home .row .column .content .terms {
+    font-size: 13px;
     margin-bottom: 20px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.home .row .column .content .discount {
+    font-size: 15px;
+    background: white;
+    width: 70%;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .home .row .column .content a {
@@ -275,10 +294,13 @@ hr {
 
 .book .row .column {
     text-align: center;
-    background-color: rgba(255, 166, 166, 0.294);
+    background-color: white;
     padding-bottom: 20px;
     padding-top: 15px;
     border-radius: 15px;
+    box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75)
 }
 
 .book .row .column img {
@@ -338,7 +360,7 @@ hr {
 }
 
 .section-type #contact-info {
-    color: green;
+    color: rgb(41, 19, 243);
     font-weight: bold;
 }
 
@@ -376,7 +398,6 @@ hr {
     color: rgba(13, 75, 245, 0.945);
     font-weight: bold;
     text-shadow: 1px 1px black;
-    
 }
 
 .contact .address .rw .col p {
@@ -396,6 +417,9 @@ hr {
     margin-left: 150px;
     border-radius: 20px;
     padding-top: 20px;
+    box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.75)
 }
 
 .contact .contact-form label {
